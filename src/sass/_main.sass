@@ -1,0 +1,136 @@
+.main
+	display: flex
+	align-items: center
+	width: 100%
+	height: 100vh
+	background: $dark-color url(../img/main/bg.png) center no-repeat
+	background-size: cover
+	&::before
+		content: ''
+		position: absolute
+		top: -4px
+		left: -4px
+		width: 100%
+		height: 100%
+		background: linear-gradient(to top, rgba($dark-color, .0) 0%, rgba($dark-color, .5) 90%,  rgba($dark-color, 1) 100%)
+
+	h1
+		position: relative
+		font-family: 'Exo2.0', sans-serif		
+		font-weight: 300	
+		font-size: 36px
+		color: $text-color-light
+		text-align: center
+	.row
+		justify-content: space-between	
+	.wrap
+		position: relative
+		display: flex
+		justify-content: center
+		flex-direction: column
+		margin: 25px 15px 0 15px
+		width: 320px
+
+	&-content
+		position: relative
+		width: 320px
+		height: 480px	
+		padding-top: 25px
+		padding-left: 45px	
+		color: $text-color-dark
+		background-color: $light-color
+		border: 4px solid $default-color
+		border-radius: 10px
+		&__item
+			position: absolute
+			top: -4px
+			left: -4px
+			z-index: 11	
+			width: 50px
+			height: 50px
+			background: url(../img/main/bg.png) center no-repeat			
+			&::before
+				content: ''
+				position: absolute
+				top: 24px
+				left: -8px
+				z-index: 1
+				width: 70px
+				height: 4px
+				background: red
+				transform: rotate(-45deg)
+			&::after
+				content: ''
+				position: absolute
+				top: 0
+				left: 0
+				width: 0
+				height: 0
+				border-top: 50px solid rgba($dark-color, .5)
+				border-right: 50px solid $light-color
+		&__info
+			font-size: 16px	
+			color: $text-color-medium
+		&__title
+			margin-top: 5px
+			font-size: 48px
+			font-weight: 700		
+			text-align: left
+		&__subtitle
+			font-size: 24px
+			font-weight: 700				
+		&__descr	
+			margin-top: 15px
+			font-size: 14px
+			line-height: 16px					
+			color: $text-color-medium	
+		&__img
+			position: absolute
+			left: 0
+			bottom: 0
+			width: 315px
+			height: 273px
+			background: url(../img/main/cat.png) top no-repeat
+			border-radius: 10px
+		&__weight
+			position: absolute
+			right: 16px
+			bottom: 16px
+			z-index: 1
+			width: 81px
+			height: 81px
+			padding-top: 5px
+			font-size: 42px
+			text-align: center			
+			color: $text-color-light
+			&::before
+				content: ''
+				position: absolute
+				top: 50%
+				left: 50%
+				z-index: -1
+				width: 81px
+				height: 81px
+				margin-left: -40px
+				margin-top: -40px							
+				background-color: $default-color
+				border-radius: 50%
+			.small
+				display: block
+				margin-top: -5px
+				font-size: 21px
+
+
+	&-action
+		margin-top: 16px
+		font-size: 13px
+		font-weight: 400		
+		color: $text-color-light
+		line-height: 16px
+		text-align: center
+		text-shadow: 0px 1px 0px $dark-color
+		a
+			color: $default-color
+			border-bottom: 1px dashed $default-color
+
+

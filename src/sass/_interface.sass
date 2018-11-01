@@ -1,0 +1,56 @@
+.default
+	border-color: $default-color
+	.main-content__item
+		&::before				
+			background-color: $default-color
+	.main-content__weight
+		&::before				
+			background-color: $default-color
+
+.default--hover
+	border-color: $default-color--hover
+	.main-content__item
+		&::before				
+			background-color: $default-color--hover
+	.main-content__weight
+		&::before				
+			background-color: $default-color--hover
+
+.selected
+	border-color: $selected-color
+	.main-content__item
+		&::before				
+			background-color: $selected-color
+	.main-content__weight
+		&::before				
+			background-color: $selected-color
+
+.selected--hover
+	border-color: $selected-color--hover
+	.main-content__item
+		&::before				
+			background-color: $selected-color--hover	
+	.main-content__weight
+		&::before				
+			background-color: $selected-color--hover
+
+.disabled	
+	border-color: $disabled-color
+	color: $disabled-color
+	.main-content__info
+		color: $disabled-color
+	.main-content__descr
+		color: $disabled-color
+	.main-content__img
+		opacity: .5
+	.main-content__item
+		&::before				
+			background-color: $disabled-color
+	.main-content__weight
+		z-index: 15
+		&::before				
+			background-color: $disabled-color
+	&-color
+		color: #ffff66	
+.hide			
+	display: none
